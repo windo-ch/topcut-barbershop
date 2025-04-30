@@ -4,7 +4,7 @@ import { Layout } from '@/components/Layout';
 import { Users } from 'lucide-react';
 
 const About = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   return (
     <Layout>

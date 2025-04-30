@@ -4,7 +4,7 @@ import { Layout } from '@/components/Layout';
 import { Scissors } from 'lucide-react';
 
 const Services = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   const services = [
     { name: 'haircut', price: 34 },
@@ -14,8 +14,6 @@ const Services = () => {
     { name: 'haircut_beardTrim', price: 55, customName: language === 'en' ? 'Haircut & Beard Trim' : 'Haarschnitt & Bartschnitt' },
     { name: 'senior_haircut', price: 29, customName: language === 'en' ? 'Senior Haircut (65+)' : 'Senioren-Haarschnitt (65+)' },
   ];
-
-  const { language } = useLanguage();
 
   return (
     <Layout>
