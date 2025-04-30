@@ -1,8 +1,10 @@
 
 import { useState, useEffect } from 'react';
+import { useIsMobile } from '@/hooks/use-mobile';
 
 export const LoadingScreen = () => {
   const [isVisible, setIsVisible] = useState(true);
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     // Set timeout to hide the loading screen after 3 seconds
@@ -17,16 +19,13 @@ export const LoadingScreen = () => {
   if (!isVisible) return null;
 
   return (
-    <div className="fixed inset-0 bg-black z-50 flex flex-col items-center justify-center transition-opacity duration-500">
-      <div className="animate-bounce mb-4">
+    <div className="fixed inset-0 bg-black z-50 flex items-center justify-center transition-opacity duration-500">
+      <div className="animate-pulse">
         <img 
-          src="/lovable-uploads/03f1b0f0-4ddd-43cd-89ff-ce39f163e621.png" 
+          src="/lovable-uploads/85a8bb7a-af46-4339-8a71-659b6f5fa52c.png" 
           alt="Top Cut Barbershop" 
-          className="h-32 md:h-40" 
+          className={isMobile ? "w-full px-4" : "h-64 md:h-80"} 
         />
-      </div>
-      <div className="animate-pulse mt-8 text-white text-lg font-medium">
-        Loading...
       </div>
     </div>
   );
