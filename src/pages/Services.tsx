@@ -1,7 +1,7 @@
 
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Layout } from '@/components/Layout';
-import { Scissors } from 'lucide-react';
+import { BarberScissors } from '@/components/BarberScissors';
 
 const Services = () => {
   const { t, language } = useLanguage();
@@ -29,8 +29,8 @@ const Services = () => {
       <section className="py-16">
         <div className="container-custom max-w-4xl">
           <div className="text-center mb-12">
-            <div className="scissors-spin inline-block">
-              <Scissors className="h-10 w-10 mb-4 text-brand-gold" />
+            <div className="inline-block">
+              <BarberScissors className="mb-4" size={40} color="#000" goldColor="#F3C034" />
             </div>
             <h2 className="heading-2 text-brand-gold">{t('servicesTitle')}</h2>
           </div>
