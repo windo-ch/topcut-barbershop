@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
@@ -99,17 +98,46 @@
     @apply animate-bounce;
   }
   
-  /* Scissors animation */
+  /* Animated Scissors Styles */
+  .animated-scissors-container {
+    @apply inline-block relative;
+    perspective: 1000px;
+  }
+  
   .animated-scissors {
-    @apply transition-all duration-300;
+    animation: scissors-open-close 4s infinite ease-in-out;
+    transform-origin: 60px 60px;
   }
   
-  .animated-scissors:hover {
-    @apply rotate-12 scale-110;
+  .scissors-handle {
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.3));
   }
   
+  .scissors-bottom-handle {
+    animation: handle-move 4s infinite ease-in-out;
+    transform-origin: 60px 60px;
+  }
+  
+  .scissors-blade {
+    filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.2));
+  }
+  
+  .scissors-bottom-blade {
+    animation: blade-move 4s infinite ease-in-out;
+    transform-origin: 60px 60px;
+  }
+  
+  .scissors-joint {
+    filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.2));
+  }
+  
+  .scissors-accent {
+    animation: accent-shine 4s infinite ease-in-out;
+  }
+  
+  /* Other existing animations */
   .scissors-spin {
-    animation: scissors-spin 3s infinite ease-in-out;
+    display: none; /* Hide old scissors */
   }
   
   .scissors-cut {
@@ -133,21 +161,46 @@
   to { transform: scale(1); opacity: 1; }
 }
 
-@keyframes scissors-spin {
-  0% { transform: rotate(0deg); }
-  25% { transform: rotate(10deg); }
-  75% { transform: rotate(-5deg); }
-  100% { transform: rotate(0deg); }
+@keyframes scissors-open-close {
+  0%, 100% { transform: rotate(0deg) scale(1); }
+  10% { transform: rotate(-5deg) scale(1.05); }
+  20% { transform: rotate(5deg) scale(1.1); }
+  30% { transform: rotate(-5deg) scale(1.05); }
+  40% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(0deg) scale(1); }
+  60% { transform: rotate(10deg) scale(1.05); }
+  70% { transform: rotate(-10deg) scale(1.1); }
+  80% { transform: rotate(10deg) scale(1.05); }
+  90% { transform: rotate(0deg) scale(1); }
 }
 
-@keyframes scissors-cut {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.1) rotate(5deg); }
+@keyframes handle-move {
+  0%, 40%, 100% { transform: rotate(0deg); }
+  10% { transform: rotate(10deg); }
+  20% { transform: rotate(25deg); }
+  30% { transform: rotate(10deg); }
+  50% { transform: rotate(0deg); }
+  60% { transform: rotate(-10deg); }
+  70% { transform: rotate(-25deg); }
+  80% { transform: rotate(-10deg); }
+  90% { transform: rotate(0deg); }
 }
 
-@keyframes slideInRight {
-  from { transform: translateX(20px); opacity: 0; }
-  to { transform: translateX(0); opacity: 1; }
+@keyframes blade-move {
+  0%, 40%, 100% { transform: rotate(0deg); }
+  10% { transform: rotate(15deg); }
+  20% { transform: rotate(40deg); }
+  30% { transform: rotate(15deg); }
+  50% { transform: rotate(0deg); }
+  60% { transform: rotate(-15deg); }
+  70% { transform: rotate(-40deg); }
+  80% { transform: rotate(-15deg); }
+  90% { transform: rotate(0deg); }
+}
+
+@keyframes accent-shine {
+  0%, 100% { opacity: 0.8; }
+  50% { opacity: 1; }
 }
 
 @layer utilities {
