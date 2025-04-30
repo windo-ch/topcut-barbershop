@@ -19,7 +19,7 @@ export const Navbar = () => {
   };
 
   return (
-    <header className="bg-brand-gold text-white py-4 shadow-md relative z-10">
+    <header className="bg-black text-white py-4 shadow-md relative z-10">
       <div className="container-custom flex justify-between items-center">
         <Link to="/" className="flex items-center" onClick={closeMenu}>
           <img 
@@ -54,7 +54,7 @@ export const Navbar = () => {
 
       {/* Mobile navigation */}
       {menuOpen && (
-        <nav className="md:hidden absolute top-full left-0 w-full bg-brand-gold border-t border-white/20 py-4 shadow-lg">
+        <nav className="md:hidden absolute top-full left-0 w-full bg-black border-t border-white/20 py-4 shadow-lg">
           <div className="flex flex-col space-y-4 px-6">
             <Link 
               to="/" 

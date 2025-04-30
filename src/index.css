@@ -74,6 +74,108 @@
   }
 
   .nav-link {
-    @apply text-white hover:text-opacity-80 transition-colors duration-200 font-medium;
+    @apply text-white hover:text-brand-gold transition-colors duration-300 font-medium relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-0 after:bg-brand-gold after:transition-all after:duration-300 hover:after:w-full;
+  }
+  
+  /* Card styles */
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  }
+  
+  /* Animation classes */
+  .fade-in {
+    @apply animate-fadeIn;
+  }
+  
+  .slide-in {
+    @apply animate-slideIn;
+  }
+  
+  .scale-in {
+    @apply animate-scaleIn;
+  }
+  
+  .bounce {
+    @apply animate-bounce;
+  }
+  
+  /* Scissors animation */
+  .animated-scissors {
+    @apply transition-all duration-300;
+  }
+  
+  .animated-scissors:hover {
+    @apply rotate-12 scale-110;
+  }
+  
+  .scissors-spin {
+    animation: scissors-spin 3s infinite ease-in-out;
+  }
+  
+  .scissors-cut {
+    animation: scissors-cut 2s infinite ease-in-out;
+  }
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-20px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes scissors-spin {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(10deg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes scissors-cut {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1) rotate(5deg); }
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(20px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@layer utilities {
+  .animate-fadeIn {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+  
+  .animate-slideIn {
+    animation: slideIn 0.5s ease-out forwards;
+  }
+  
+  .animate-scaleIn {
+    animation: scaleIn 0.5s ease-out forwards;
+  }
+  
+  .animate-slideInRight {
+    animation: slideInRight 0.5s ease-out forwards;
+  }
+  
+  .animation-delay-100 {
+    animation-delay: 100ms;
+  }
+  
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+  
+  .animation-delay-300 {
+    animation-delay: 300ms;
   }
 }
