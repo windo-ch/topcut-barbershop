@@ -14,7 +14,7 @@ const Index = () => {
       <section className="bg-brand-gold text-white py-16 md:py-24">
         <div className="container-custom text-center">
           <div className="mb-6 relative">
-            <div className="scissors-spin inline-block">
+            <div className="scissors-hover inline-block">
               <Scissors className="h-16 w-16 mb-4 text-white drop-shadow-md" />
             </div>
           </div>
@@ -26,51 +26,53 @@ const Index = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg shadow-lg transition-all duration-300 hover:bg-white/15 animate-slideIn animation-delay-200">
-              <div className="flex items-center justify-center mb-4">
-                <Clock className="h-8 w-8 mr-2 text-white" />
+            {/* Enhanced Opening Hours Card */}
+            <div className="enhanced-card animate-slideIn animation-delay-200">
+              <div className="enhanced-card-title">
+                <Clock className="h-8 w-8 mr-2 text-brand-gold" />
                 <h2 className="text-2xl font-bold">{t('openingHours')}</h2>
               </div>
               <ul className="space-y-2 text-left">
-                <li className="flex justify-between hover:bg-white/5 p-2 rounded transition-colors">
+                <li className="enhanced-card-item">
                   <span className="font-medium">{t('monday')}:</span>
                   <span>9:00 - 19:00</span>
                 </li>
-                <li className="flex justify-between hover:bg-white/5 p-2 rounded transition-colors">
+                <li className="enhanced-card-item">
                   <span className="font-medium">{t('tuesday')}:</span>
                   <span>9:00 - 19:00</span>
                 </li>
-                <li className="flex justify-between hover:bg-white/5 p-2 rounded transition-colors">
+                <li className="enhanced-card-item">
                   <span className="font-medium">{t('wednesday')}:</span>
                   <span>9:00 - 19:00</span>
                 </li>
-                <li className="flex justify-between hover:bg-white/5 p-2 rounded transition-colors">
+                <li className="enhanced-card-item">
                   <span className="font-medium">{t('thursday')}:</span>
                   <span>9:00 - 19:00</span>
                 </li>
-                <li className="flex justify-between hover:bg-white/5 p-2 rounded transition-colors">
+                <li className="enhanced-card-item">
                   <span className="font-medium">{t('friday')}:</span>
                   <span>9:00 - 19:00</span>
                 </li>
-                <li className="flex justify-between hover:bg-white/5 p-2 rounded transition-colors">
+                <li className="enhanced-card-item">
                   <span className="font-medium">{t('saturday')}:</span>
                   <span>9:00 - 17:00</span>
                 </li>
-                <li className="flex justify-between hover:bg-white/5 p-2 rounded transition-colors">
+                <li className="enhanced-card-item">
                   <span className="font-medium">{t('sunday')}:</span>
                   <span>{t('closed')}</span>
                 </li>
               </ul>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg shadow-lg flex flex-col justify-center items-center transition-all duration-300 hover:bg-white/15 animate-slideInRight animation-delay-200">
-              <div className="flex items-center mb-4">
-                <Phone className="h-8 w-8 mr-2 text-white animate-pulse" />
+            {/* Enhanced Phone Number Card */}
+            <div className="enhanced-card flex flex-col justify-center items-center animate-slideInRight animation-delay-200">
+              <div className="enhanced-card-title">
+                <Phone className="h-8 w-8 mr-2 text-brand-gold animate-pulse" />
                 <h2 className="text-2xl font-bold">{t('phoneNumber')}</h2>
               </div>
               <a 
                 href="tel:+41415592299" 
-                className="text-3xl font-bold transition-all duration-300 hover:text-brand-gold hover:scale-105"
+                className="enhanced-phone-number"
               >
                 041 559 22 99
               </a>
@@ -84,7 +86,7 @@ const Index = () => {
       <section className="py-16 bg-white">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <div className="inline-block animated-scissors mb-4">
+            <div className="inline-block scissors-hover mb-4">
               <Scissors className="h-10 w-10 text-brand-gold" />
             </div>
             <h2 className="heading-2 text-brand-gold mb-4">{t('servicesTitle')}</h2>
