@@ -4,7 +4,6 @@ import { Layout } from '@/components/Layout';
 import { Button } from '@/components/ui/button';
 import { Phone, Clock } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { BarberScissors } from '@/components/BarberScissors';
 
 const Index = () => {
   const { t } = useLanguage();
@@ -14,9 +13,6 @@ const Index = () => {
       {/* Hero Section */}
       <section className="bg-brand-gold text-white py-16 md:py-24">
         <div className="container-custom text-center">
-          <div className="mb-6 relative">
-            <BarberScissors size={64} />
-          </div>
           <h1 className="heading-1 mb-4 animate-fadeIn">{t('welcome')}</h1>
           <p className="body-text mb-8 max-w-2xl mx-auto animate-fadeIn animation-delay-100">{t('welcomeMessage')}</p>
           
@@ -153,3 +149,6 @@ const Index = () => {
 };
 
 export default Index;
+
+// Need to add the import for BarberScissors at the top
+import { BarberScissors } from '@/components/BarberScissors';
