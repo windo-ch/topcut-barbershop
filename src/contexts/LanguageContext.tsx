@@ -141,7 +141,8 @@ const translations: Translations = {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
-  const [language, setLanguage] = useState('en');
+  // Set German as default language
+  const [language, setLanguage] = useState('de');
 
   const t = (key: string) => {
     if (!translations[language]) {

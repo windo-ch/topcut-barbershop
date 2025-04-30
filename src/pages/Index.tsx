@@ -2,8 +2,9 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Layout } from '@/components/Layout';
 import { Button } from '@/components/ui/button';
-import { Phone, Clock, Scissors } from 'lucide-react';
+import { Phone, Clock } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { BarberScissors } from '@/components/BarberScissors';
 
 const Index = () => {
   const { t } = useLanguage();
@@ -14,9 +15,7 @@ const Index = () => {
       <section className="bg-brand-gold text-white py-16 md:py-24">
         <div className="container-custom text-center">
           <div className="mb-6 relative">
-            <div className="scissors-hover inline-block">
-              <Scissors className="h-16 w-16 mb-4 text-white drop-shadow-md" />
-            </div>
+            <BarberScissors size={64} />
           </div>
           <h1 className="heading-1 mb-4 animate-fadeIn">{t('welcome')}</h1>
           <p className="body-text mb-8 max-w-2xl mx-auto animate-fadeIn animation-delay-100">{t('welcomeMessage')}</p>
@@ -86,9 +85,7 @@ const Index = () => {
       <section className="py-16 bg-white">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <div className="inline-block scissors-hover mb-4">
-              <Scissors className="h-10 w-10 text-brand-gold" />
-            </div>
+            <BarberScissors className="mb-4" size={40} color="#000" goldColor="#F3C034" />
             <h2 className="heading-2 text-brand-gold mb-4">{t('servicesTitle')}</h2>
             <p className="body-text text-gray-700 max-w-2xl mx-auto">
               {t('servicesIntro')}

@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
@@ -99,7 +98,7 @@
     @apply animate-bounce;
   }
   
-  /* Scissors animation - UPDATED to only animate on hover */
+  /* Scissors animation - updated to only animate on hover */
   .animated-scissors {
     @apply transition-all duration-300;
   }
@@ -108,14 +107,14 @@
     @apply rotate-12 scale-110;
   }
   
-  /* Removed always-on scissors-spin class */
-  /* Added hover-triggered scissors animation */
+  /* Scissors hover animation */
   .scissors-hover {
     transition: transform 0.5s ease;
   }
   
   .scissors-hover:hover {
-    animation: scissors-spin 2s ease-in-out infinite;
+    animation: scissors-spin 1.5s ease-in-out;
+    transform: scale(1.1);
   }
   
   .scissors-cut {
@@ -158,8 +157,8 @@
 
 @keyframes scissors-spin {
   0% { transform: rotate(0deg); }
-  25% { transform: rotate(10deg); }
-  75% { transform: rotate(-5deg); }
+  25% { transform: rotate(10deg) scale(1.1); }
+  75% { transform: rotate(-5deg) scale(1.1); }
   100% { transform: rotate(0deg); }
 }
 

@@ -44,7 +44,7 @@ export const Footer = () => {
           </div>
           
           <div className="text-center md:text-left">
-            <h3 className="text-xl font-semibold mb-4 text-brand-gold">{t('Navigation')}</h3>
+            <h3 className="text-xl font-semibold mb-4 text-brand-gold">Navigation</h3>
             <nav className="flex flex-col space-y-2">
               <Link to="/" className="hover:text-brand-gold transition-colors">{t('home')}</Link>
               <Link to="/about" className="hover:text-brand-gold transition-colors">{t('about')}</Link>
@@ -55,7 +55,7 @@ export const Footer = () => {
         </div>
         
         <div className="border-t border-white/10 pt-6 text-center">
-          <p className="text-white/70">© {currentYear} Top Cut Barbershop. {t('All Rights Reserved')}</p>
+          <p className="text-white/70">© {currentYear} Top Cut Barbershop. All Rights Reserved</p>
         </div>
       </div>
     </footer>
