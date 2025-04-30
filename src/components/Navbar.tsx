@@ -23,7 +23,7 @@ export const Navbar = () => {
       <div className="container-custom flex justify-between items-center">
         <Link to="/" className="flex items-center" onClick={closeMenu}>
           <img 
-            src="/lovable-uploads/85a8bb7a-af46-4339-8a71-659b6f5fa52c.png" 
+            src="/lovable-uploads/03f1b0f0-4ddd-43cd-89ff-ce39f163e621.png" 
             alt="Top Cut Barbershop" 
             className="h-14 md:h-20"
           />

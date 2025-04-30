@@ -14,7 +14,7 @@ export const Footer = () => {
           <div className="text-center md:text-left">
             <Link to="/" className="inline-block mb-6 hover:opacity-90 transition-opacity">
               <img 
-                src="/lovable-uploads/85a8bb7a-af46-4339-8a71-659b6f5fa52c.png" 
+                src="/lovable-uploads/03f1b0f0-4ddd-43cd-89ff-ce39f163e621.png" 
                 alt="Top Cut Barbershop" 
                 className="h-20"
               />
