@@ -45,21 +45,9 @@ const translations: Translations = {
     "phoneNumber": "Phone Number",
     
     // About page
-    "aboutTitle": "About Us",
-    "aboutIntro": "Meet our team of skilled professionals at Top Cut Barbershop",
+    "aboutTitle": "About Top Cut Barbershop",
+    "aboutIntro": "Your premier destination for quality barbering in Zug, Switzerland",
     "since": "Since 2020",
-
-    // Team
-    "teamTitle": "Our Team",
-    "misbahName": "Misbah Abas",
-    "misbahRole": "Master Barber",
-    "misbahDesc": "With over 10 years of experience, Misbah specializes in classic cuts and modern styles.",
-    "rasoulName": "Rasoul",
-    "rasoulRole": "Senior Barber",
-    "rasoulDesc": "Rasoul brings his artistic touch to every haircut, specializing in fades and beard grooming.",
-    "sultanName": "Sultan",
-    "sultanRole": "Barber",
-    "sultanDesc": "Sultan's attention to detail ensures you leave with a perfect cut every time.",
     
     // Services page
     "servicesTitle": "Our Services",
@@ -105,21 +93,9 @@ const translations: Translations = {
     "phoneNumber": "Telefonnummer",
     
     // About page
-    "aboutTitle": "Über Uns",
-    "aboutIntro": "Lernen Sie unser Team von erfahrenen Fachleuten im Top Cut Barbershop kennen",
+    "aboutTitle": "Über Top Cut Barbershop",
+    "aboutIntro": "Ihre erstklassige Adresse für hochwertige Barbier-Dienstleistungen in Zug, Schweiz",
     "since": "Seit 2020",
-
-    // Team
-    "teamTitle": "Unser Team",
-    "misbahName": "Misbah Abas",
-    "misbahRole": "Meister-Barbier",
-    "misbahDesc": "Mit über 10 Jahren Erfahrung ist Misbah Spezialist für klassische Schnitte und moderne Stile.",
-    "rasoulName": "Rasoul",
-    "rasoulRole": "Senior-Barbier",
-    "rasoulDesc": "Rasoul bringt seine künstlerische Note in jeden Haarschnitt ein und ist spezialisiert auf Fades und Bartpflege.",
-    "sultanName": "Sultan",
-    "sultanRole": "Barbier",
-    "sultanDesc": "Sultans Liebe zum Detail sorgt dafür, dass Sie jedes Mal mit einem perfekten Schnitt den Salon verlassen.",
     
     // Services page
     "servicesTitle": "Unsere Dienstleistungen",
