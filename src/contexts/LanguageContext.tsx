@@ -54,8 +54,8 @@ const translations: Translations = {
     "servicesIntro": "Quality barbering services at fair prices",
     "haircut": "Haircut",
     "beardTrim": "Beard Trim",
-    "hotTowelShave": "Hot Towel Shave",
-    "kidsHaircut": "Kids Haircut",
+    "hairAndBeard": "Hair and Beard",
+    "kidsHaircut": "Kids (up to 12 years)",
     "chf": "CHF",
     
     // Contact page
@@ -102,8 +102,8 @@ const translations: Translations = {
     "servicesIntro": "Qualitäts-Barbier-Dienstleistungen zu fairen Preisen",
     "haircut": "Haarschnitt",
     "beardTrim": "Bartschnitt",
-    "hotTowelShave": "Rasur mit heißem Handtuch",
-    "kidsHaircut": "Kinderhaarschnitt",
+    "hairAndBeard": "Haare und Bart",
+    "kidsHaircut": "Kinder (bis 12 Jahre)",
     "chf": "CHF",
     
     // Contact page

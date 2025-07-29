@@ -7,12 +7,10 @@ const Services = () => {
   const { t, language } = useLanguage();
 
   const services = [
-    { name: 'haircut', price: 34 },
+    { name: 'haircut', price: 31 },
     { name: 'beardTrim', price: 25 },
-    { name: 'hotTowelShave', price: 30 },
-    { name: 'kidsHaircut', price: 29 },
-    { name: 'haircut_beardTrim', price: 55, customName: language === 'en' ? 'Haircut & Beard Trim' : 'Haarschnitt & Bartschnitt' },
-    { name: 'senior_haircut', price: 29, customName: language === 'en' ? 'Senior Haircut (65+)' : 'Senioren-Haarschnitt (65+)' },
+    { name: 'hairAndBeard', price: 46 },
+    { name: 'kidsHaircut', price: 25 },
   ];
 
   return (
@@ -52,7 +50,7 @@ const Services = () => {
                   {services.map((service, index) => (
                     <tr key={index} className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
                       <td className="py-4 text-lg font-medium">
-                        {service.customName || t(service.name)}
+                        {t(service.name)}
                       </td>
                       <td className="py-4 text-right text-lg font-bold text-brand-gold">
                         {service.price} {t('chf')}
