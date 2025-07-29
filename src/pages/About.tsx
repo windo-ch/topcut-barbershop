@@ -23,8 +23,8 @@ const About = () => {
             <div className="flex flex-col md:flex-row">
               <div className="md:w-1/2">
                 <img 
-                  src="https://images.unsplash.com/photo-1634302086738-b4b9efc2605d?q=80&w=1966"
-                  alt="Top Cut Barbershop"
+                  src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?q=80&w=1974"
+                  alt="Top Cut Barbershop Interior"
                   className="w-full h-full object-cover"
                 />
               </div>
