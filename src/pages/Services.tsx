@@ -101,7 +101,7 @@ const Services = () => {
               </div>
               <div className="md:w-1/2">
                 <img 
-                  src="https://images.unsplash.com/photo-1589525231707-f2de2428f59c?q=80&w=1970"
+                  src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?q=80&w=1974"
                   alt="Barbershop tools"
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                 />
